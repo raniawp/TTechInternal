@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="intro">
+
+        <h1>Welcome to my quiz</h1>  
+    </div>
+    <div id="quiz">
+        <h3 id="question"> Q1: Which former female group artist sang the national anthem at an NBA all star game in 2018</h3>
+        <div id="answerA" onclick="aFunction()">Beyonce</div>
+        <div id="answerB" onclick="bFunction()">Fergy</div>
+        <div id="answerC" onclick="cFunction()">Selena Gomez</div> <br>
+
+        <div id="q1Button"><button>Submit Q1</button></div> <br>
+    </div>
+
+    <div>
+      <h3 id="questionB"> Q1: who won the most billboard music awards in the year 2022?</h3>
+      <div id="answerA" onclick="aFunction()">Beyonce</div>
+      <div id="answerB" onclick="bFunction()">Fergy</div>
+      <div id="answerC" onclick="cFunction()">Selena Gomez</div> <br>
+    </div>
+
+    <style>
+        #intro {text-align: center; color:white;}
+        #quiz {text-align: center; color: white;}
+        body {background-color: rgb(161, 103, 46);}
+    </style>
+
+  <script>  []
+    let userName = document.querySelector("#userName");
+    let headerText = document.querySelector("#headerText");
+
+
+    function greeting() {
+        headerText.innerHTML = ""
+        headerText.innerHTML = "Hello" + userName.value + "welcome to my quiz"
+        greetingInput.style.disple = "none"
+        quiz.style.display = "block";
+
+    }
+
+    function aFunction(){
+      answerA.style.color = "red";
+    }
+
+    function bFunction(){
+      answerB.style.color = "green";
+    }
+
+    function cFunction(){
+      answerC.style.color = "red";
+    }
+    
+  </script>
+
+
+</body>
+</html>
